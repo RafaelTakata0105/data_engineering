@@ -399,5 +399,27 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-# Enviroment and passwords
+# Pipeline
+# Archivos de configuración y credenciales
 .env
+config.json
+secrets.json
+
+# Archivos generados por Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de logs
+*.log
+
+# Archivos de bases de datos locales
+*.sqlite
+*.db
+
+# Entornos virtuales
+venv/
+.env/
+.venv/
+
