@@ -1,0 +1,8 @@
+{"product": {"name": "Mouse", "price": "200", "description": "Este es un mouse de prueba"}, "quantity": 3, "status": "Confirmed"}
+{"product": {"name": "Funda de Iphone", "price": "200", "description": "Iphone 5"}, "quantity": 20, "status": "Confirmed"}
+{"product": {"name": "Cargador", "price": "300", "description": "Tipo c"}, "quantity": 5, "status": "Confirmed"}
+{"product": {"name": "Laptop Dell", "price": "12000", "description": "Intel core i5"}, "quantity": 8, "status": "Confirmed"}
+{"product": {"name": "Mouse", "price": "200", "description": "Este es un mouse de prueba"}, "quantity": 2, "status": "Confirmed"}
+{"product": {"name": "Funda de Iphone", "price": "200", "description": "Iphone 5"}, "quantity": 9, "status": "Confirmed"}
+{"product": {"name": "Cargador", "price": "300", "description": "Tipo c"}, "quantity": 2, "status": "Confirmed"}
+{"product": {"name": "Laptop Dell", "price": "12000", "description": "Intel core i5"}, "quantity": 3, "status": "Confirmed"}
