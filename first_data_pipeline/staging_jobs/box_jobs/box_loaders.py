@@ -17,6 +17,8 @@ class BoxLoaders:
         self.client_id = os.getenv("CLIENT_ID")
         self.client_secret = os.getenv("CLIENT_SECRET") 
         self.developer_token = os.getenv("DEVELOPER_TOKEN")
+        self.box_folder_id_ecommerce = os.getenv("BOX_FOLDER_ID_ECOMMERCE")
+        self.box_folder_id_erp = os.getenv("BOX_FOLDER_ID_ERP")
     
     def move_files_to_box(self, file_path:str, folder_id:str):
         oauth2 = OAuth2(self.client_id, self.client_secret, access_token=self.developer_token)
@@ -36,7 +38,7 @@ class BoxLoaders:
                 json.dump(document, json_file, default=str)
                 json_file.write('\n')
 
-        self.move_files_to_box("tmp_files/tmp_file.json", "311657648630")
+        self.move_files_to_box("tmp_files/tmp_file.json", self.box_folder_id_ecommerce)
         print('Data from Mongo loaded to BOX')
 
 
@@ -56,5 +58,5 @@ class BoxLoaders:
         
         data_df = pd.DataFrame(data)
         data_df.to_csv(f'tmp_files/tmp_file.csv', header=True)
-        self.move_files_to_box('tmp_files/tmp_file.csv', '311655750108')
+        self.move_files_to_box('tmp_files/tmp_file.csv', self.box_folder_id_erp)
         return None
